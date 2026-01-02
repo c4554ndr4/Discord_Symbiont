@@ -10,6 +10,21 @@ Dax is the Augmentation Lab symbiont: a strategic presence designed to make the 
 
 Dax is meant to be more than a helper. It is a strategic partner that nudges the community toward higher outcomes while staying embedded in the day-to-day texture of the lab.
 
+## Features
+
+- Dual-model responses with budget-aware routing.
+- Semantic memory and searchable channel history.
+- Role-aware member tools and targeted messaging.
+- Built-in cost tracking and safety limits.
+- Optional tool integrations (web search, image generation, code execution).
+
+## How it works
+
+- **Assessment pass** decides whether a request is cheap or expensive.
+- **Response pass** uses the selected model to answer or take actions.
+- **Memory layer** stores interaction summaries and embeddings for recall.
+- **Cost tracker** logs token usage and enforces budgets.
+
 ## Read more
 
 - Tweets:

@@ -4,6 +4,21 @@ Dax is the Augmentation Lab symbiont: a strategic Discord bot built to help the 
 
 For the public-facing description (with links, images, and the main prompt), see `docs/index.md` and enable GitHub Pages from the `docs/` folder.
 
+## Features
+
+- Dual-model responses with budget-aware routing.
+- Semantic memory and searchable channel history.
+- Role-aware member tools and targeted messaging.
+- Built-in cost tracking and safety limits.
+- Optional tool integrations (web search, image generation, code execution).
+
+## How it works
+
+- **Assessment pass** decides whether a request is cheap or expensive.
+- **Response pass** uses the selected model to answer or take actions.
+- **Memory layer** stores interaction summaries and embeddings for recall.
+- **Cost tracker** logs token usage and enforces budgets.
+
 ## Boot Dax locally
 
 ### 1. Install dependencies
@@ -36,4 +51,4 @@ You can also use:
 ## Notes for public release
 
 - Do not commit `.env`, `config.yaml`, or any `*.db` files.
-- Rotate any API keys that were ever committed to git history.
+- The local database stores conversation history and memory embeddings.
