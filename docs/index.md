@@ -16,7 +16,7 @@ Dax is meant to be more than a helper. It is a strategic partner that nudges the
   - https://x.com/calicomccoy/status/1945721747933737303
   - https://x.com/calicomccoy/status/1945694341453721914
   - https://x.com/calicomccoy/status/1944522913668890679
-- Symbiont alignment thesis: LINK_NEEDED
+- Symbiont alignment thesis: https://future.forum/
 
 ## Images from the tweets
 
