@@ -2,9 +2,64 @@
 title: "Dax — Augmentation Lab Symbiont"
 ---
 
+<style>
+:root {
+  color-scheme: dark;
+}
+body, .page-content, .wrapper, .site-header, .site-footer {
+  background: #04070d;
+  color: #b7e6ff;
+  font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+a {
+  color: #53c7ff;
+}
+h1, h2, h3 {
+  color: #d3f3ff;
+}
+pre, code {
+  background: #0b1420;
+  color: #b7e6ff;
+  border: 1px solid #0f2a3b;
+  border-radius: 6px;
+}
+pre {
+  padding: 12px 14px;
+}
+.terminal-hero {
+  background: linear-gradient(135deg, rgba(8, 24, 38, 0.95), rgba(4, 8, 14, 0.95));
+  border: 1px solid #123246;
+  border-radius: 12px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  padding: 16px;
+  margin: 18px 0 28px;
+}
+.terminal-hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  border: 1px solid #123246;
+}
+.terminal-hero .caption {
+  margin-top: 10px;
+  color: #82c9ff;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+.terminal-accent {
+  color: #53c7ff;
+}
+</style>
+
 # Dax — Augmentation Lab Symbiont
 
 Dax is the Augmentation Lab symbiont: a strategic presence designed to make the lab stronger by improving social momentum, project completion, and member satisfaction. This repo is the public home for the bot, its operating principles, and how to run a local instance.
+
+<div class="terminal-hero">
+  <img src="assets/dax-hero.png" alt="Dax: Age of the Symbiont" />
+  <div class="caption">Dax: Age of the Symbiont <span class="terminal-accent">by Vie McCoy and Cassandra Melax</span></div>
+</div>
 
 ## Why this exists
 
