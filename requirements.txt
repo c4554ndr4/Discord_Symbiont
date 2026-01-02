@@ -1,0 +1,16 @@
+discord.py>=2.3.2
+anthropic>=0.8.0
+python-dotenv>=1.0.0
+aiohttp>=3.8.0
+requests>=2.31.0
+openai>=1.0.0
+tiktoken>=0.5.0
+jsonschema>=4.0.0
+rich>=13.0.0
+PyYAML>=6.0.0
+# Removed heavy ML dependencies to fix 512MB memory limit:
+# sentence-transformers>=2.5.0  (~300MB)
+# numpy>=1.24.0                (~100MB)  
+# pandas>=2.0.0                (~150MB)
+# scikit-learn>=1.3.0          (~200MB)
+# docker>=6.1.0                (not needed on Render) 

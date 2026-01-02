@@ -1,0 +1,24 @@
+# DEPLOYMENT DISABLED - Commented out to stop Render costs
+# services:
+#   - type: web
+#     name: auglab-discord-bot
+#     runtime: python3
+#     plan: starter
+#     buildCommand: pip install -r requirements.txt
+#     startCommand: python auglab_bot_main.py
+#     healthCheckPath: /health
+#     disk:
+#       name: auglab-data
+#       mountPath: /opt/render/project/data
+#       sizeGB: 1
+#     envVars:
+#       - key: DEBUG
+#         value: false
+#       - key: PYTHONUNBUFFERED
+#         value: 1
+#       - key: DATABASE_PATH
+#         value: /opt/render/project/data/auglab_bot.db
+#     # Environment variables to be set in Render dashboard:
+#     # DISCORD_BOT_TOKEN
+#     # ANTHROPIC_API_KEY
+#     # OPENAI_API_KEY 

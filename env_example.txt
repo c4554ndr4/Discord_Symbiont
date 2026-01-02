@@ -1,0 +1,48 @@
+# Discord Bot Configuration
+DISCORD_BOT_TOKEN=your_discord_bot_token_here
+
+# Anthropic API Configuration  
+ANTHROPIC_API_KEY=your_anthropic_api_key_here
+
+# OpenRouter API Configuration (for Grok 4 and other models)
+OPEN_ROUTER_KEY=your_openrouter_api_key_here
+
+# OpenAI API Configuration (for image generation)
+OPENAI_API_KEY=your_openai_api_key_here
+
+# Google API Configuration (for search)
+GOOGLE_API_KEY=your_google_api_key_here
+
+# Perplexity API Configuration (for enhanced web search - optional)
+PERPLEXITY_API_KEY=your_perplexity_api_key_here
+
+# Bot Configuration
+BOT_PREFIX=!
+MAX_MESSAGE_HISTORY=50
+CLAUDE_MODEL_CHEAP=claude-3-haiku-20240307
+CLAUDE_MODEL_EXPENSIVE=claude-3-5-sonnet-20241022
+
+# Augmentation Lab Specific Configuration
+COMPUTE_BUDGET=5.0
+RESIDENCY_ROLE_NAME=25 residency
+TARGET_GUILD_ID=your_guild_id_here
+DATABASE_PATH=./auglab_bot.db
+
+# Cost tracking per model (dollars per 1M tokens)
+HAIKU_INPUT_COST=0.25
+HAIKU_OUTPUT_COST=1.25
+SONNET_INPUT_COST=3.0
+SONNET_OUTPUT_COST=15.0
+GPT4O_INPUT_COST=2.5
+GPT4O_OUTPUT_COST=10.0
+
+# MCP Configuration
+MCP_ENABLE=True
+MCP_SERVERS=image_generation,web_search
+
+# Optional: Specific channels where bot should respond (comma-separated IDs)
+# Leave empty to respond in all channels where bot has permissions
+ALLOWED_CHANNELS=
+
+# Optional: Enable debug logging
+DEBUG=False 

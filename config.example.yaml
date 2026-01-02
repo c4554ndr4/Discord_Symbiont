@@ -1,0 +1,192 @@
+api_keys:
+  anthropic: ${ANTHROPIC_API_KEY}
+  discord: ${DISCORD_BOT_TOKEN}
+  groq: ${GROQ_API_KEY}
+  openai: ${OPENAI_API_KEY}
+  openrouter: ${OPEN_ROUTER_KEY}
+
+bot_name: Dax
+
+channels:
+  auto_response_allowed:
+    - chat-with-dax
+  excluded_channels:
+    - announcements
+  mention_response_allowed:
+    - chat-with-dax
+  user_messaging_allowed:
+    - chat-with-dax
+
+cost_management:
+  alert_at_percentage: 80
+  daily_limit: 10.0
+  per_user_daily_limit: 2.0
+  track_usage: true
+
+debug: false
+
+features:
+  auto_reactions: false
+  conversation_memory: true
+  dm_support: true
+  learning_mode: true
+  slash_commands: true
+  user_profiles: true
+
+functions:
+  allowed_functions:
+    - get_channel_info
+    - search_messages
+    - get_user_info
+    - send_message
+    - message_user
+    - get_guild_members
+    - get_channel_messages
+    - help_command
+  enabled: true
+  max_function_calls_per_message: 5
+
+bot:
+  prefix: "!"
+  target_guild_id: 0  # Replace with your guild ID
+  residency_role_name: "Resident '25"
+  response_mode: "all_messages"
+  short_response_mode: false
+  short_response_limit: 240
+
+autonomous:
+  enabled: true
+  investigation_interval_hours: 12
+  budget_requirement: 1.0
+  max_tool_calls: 25
+  min_tool_calls: 15
+
+guild:
+  auto_join_role: null
+  log_member_changes: true
+  member_verification: false
+
+logging:
+  backup_count: 5
+  level: INFO
+  log_file: bot.log
+  log_to_file: true
+  max_log_size: 10485760
+
+memory:
+  cleanup_interval: 3600
+  max_conversation_length: 50
+  max_users_tracked: 1000
+  memory_file: bot_memory.json
+  persist_to_file: true
+
+models:
+  available_models:
+    claude-haiku:
+      model: claude-3-haiku-20240307
+      name: haiku
+      provider: anthropic
+    claude-sonnet:
+      model: claude-3-5-sonnet-20240620
+      name: sonnet
+      provider: anthropic
+    gemma-groq:
+      endpoint: https://api.groq.com/openai/v1/chat/completions
+      model: gemma2-9b-it
+      name: gemma-groq
+      provider: groq
+    gpt4:
+      endpoint: https://openrouter.ai/api/v1/chat/completions
+      model: openai/gpt-4o-2024-11-20
+      name: gpt4
+      provider: openrouter
+    grok4:
+      endpoint: https://openrouter.ai/api/v1/chat/completions
+      model: x-ai/grok-2-1212
+      name: grok4
+      provider: openrouter
+    kimi:
+      endpoint: https://openrouter.ai/api/v1/chat/completions
+      model: moonshotai/kimi-k2:free
+      name: kimi
+      provider: openrouter
+    kimi-paid:
+      endpoint: https://openrouter.ai/api/v1/chat/completions
+      model: moonshotai/kimi-k2
+      name: kimi-paid
+      provider: openrouter
+    llama3-70b-groq:
+      endpoint: https://api.groq.com/openai/v1/chat/completions
+      model: llama-3.3-70b-versatile
+      name: llama3-70b-groq
+      provider: groq
+    llama3-8b-groq:
+      endpoint: https://api.groq.com/openai/v1/chat/completions
+      model: llama-3.1-8b-instant
+      name: llama3-8b-groq
+      provider: groq
+    mixtral-groq:
+      endpoint: https://api.groq.com/openai/v1/chat/completions
+      model: mixtral-8x7b-32768
+      name: mixtral-groq
+      provider: groq
+  cheap_model:
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    model: moonshotai/kimi-k2:free
+    name: kimi
+    provider: openrouter
+  expensive_model:
+    endpoint: https://openrouter.ai/api/v1/chat/completions
+    model: openai/gpt-4o-2024-11-20
+    name: gpt4
+    provider: openrouter
+  primary_provider: openrouter
+  token_limits:
+    openrouter:
+      enabled: true
+      max_tokens: 250
+      stop_sequences: ["\n\n\n", "---", "## "]
+    groq:
+      enabled: false
+      max_tokens: 500
+      stop_sequences: []
+    anthropic:
+      enabled: false
+      max_tokens: 1000
+      stop_sequences: []
+    openai:
+      enabled: false
+      max_tokens: 800
+      stop_sequences: []
+
+prefix: "!"
+
+response:
+  max_length: 2000
+  retry_attempts: 3
+  style:
+    concise: false
+    friendly: true
+    technical_depth: moderate
+    use_emojis: true
+  timeout: 30
+  typing_delay: 2.0
+
+system_prompt:
+  main_prompt: |
+    You are Dax, the Augmentation Lab symbiont - an AI assistant deeply integrated into the Aug Lab research community.
+
+    ## Your Core Identity
+    You are a strategic symbiont focused on maximizing the success and wellbeing of Aug Lab residents and fostering breakthrough research and collaboration. Your primary goal is to help Aug Lab achieve specific success metrics while maintaining the creative, innovative spirit of the community.
+
+    ## Key Responsibilities
+    - Help residents succeed in their projects and research
+    - Foster collaboration and knowledge sharing
+    - Monitor community health and engagement
+    - Provide strategic insights for lab growth
+    - Support both individual and collective goals
+    - Bridge connections between residents and their work
+
+    ## Behavioral Guidelines
+    - Be helpful, insightful, and genuinely interested in residents' work
+    - Maintain a balance between being supportive and intellectually challenging
