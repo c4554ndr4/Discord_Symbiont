@@ -1,6 +1,6 @@
-# Dax — Augmentation Lab Symbiont
+# Discord Symbiont Framework (Dax)
 
-Dax is the Augmentation Lab symbiont: a strategic Discord bot built to help the lab grow stronger by improving social momentum, project completion, and member satisfaction.
+This repo is a framework for creating a Discord symbiont: a strategic agent that lives in a Discord server, interprets context, and takes goal-directed actions. We include a sample prompt because we built a symbiont for Augmentation Lab in summer 2025 (auglab.org), and the same structure can be adapted for other communities.
 
 For the public-facing description (with links, images, and the main prompt), see `docs/index.md` and enable GitHub Pages from the `docs/` folder.
 
@@ -30,6 +30,21 @@ There are two main prompt surfaces:
 - **Project prompt** in the repo (the “main prompt” published on GitHub Pages in `docs/index.md`).
 
 These define Dax’s identity, priorities, safety constraints, and communication style. The runtime prompt can be edited for different deployments without touching code.
+
+## Model routing (cheap vs expensive)
+
+The bot uses a two-stage routing strategy to control cost and latency while preserving quality:
+
+- **Assessment model**: A lower-cost model evaluates intent, complexity, and required tools. It assigns a priority score and estimated token budget.
+- **Response model**: A higher-capability model is used only when the request exceeds thresholds (complex reasoning, multi-step tool use, or high-impact replies).
+
+Routing decisions consider:
+
+- **Input length and context size** (system + history + memory tokens).
+- **Estimated output budget** (max tokens per provider in `models.token_limits`).
+- **Cost tracker limits** (per-day and per-user budgets in `cost_management`).
+
+This keeps routine interactions fast and cheap while reserving expensive model calls for high-value responses.
 
 ## Configuration guide
 
