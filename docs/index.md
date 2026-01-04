@@ -23,6 +23,16 @@ pre, code {
   border: 1px solid #0f2a3b;
   border-radius: 6px;
 }
+.highlight,
+.highlighter-rouge,
+.highlighter-rouge .highlight,
+.highlighter-rouge pre,
+.highlight pre {
+  background: #0b1420;
+  color: #b7e6ff;
+  border: 1px solid #0f2a3b;
+  border-radius: 6px;
+}
 pre {
   padding: 12px 14px;
 }
@@ -53,6 +63,10 @@ pre {
 </style>
 
 # Dax — Augmentation Lab Symbiont
+
+[GitHub](https://github.com/c4554ndr4/Discord_Symbiont)
+
+This page is a project overview for the Discord Symbiont framework and its primary prompt.
 
 Dax is the Augmentation Lab symbiont: a strategic presence designed to make the lab stronger by improving social momentum, project completion, and member satisfaction. This repo is the public home for the bot, its operating principles, and how to run a local instance.
 
@@ -96,19 +110,7 @@ When participants expressed destructive intent, Dax escalated to organizers via 
 
 ## Read more
 
-- Tweets:
-  - https://x.com/calicomccoy/status/1945721747933737303
-  - https://x.com/calicomccoy/status/1945694341453721914
-  - https://x.com/calicomccoy/status/1944522913668890679
 - Symbiont alignment thesis: https://future.forum/
-
-## Images from the tweets
-
-![Dax concept image 1](assets/tweets/GwCWyyuXsAA_ipz.jpg)
-
-![Dax concept image 2](assets/tweets/GwB-bWRXgAEpH3m.jpg)
-
-![Dax concept image 3](assets/tweets/GvxTlynWgAA6yTX.jpg)
 
 ## Main prompt
 
