@@ -11,6 +11,9 @@ body, .page-content, .wrapper, .site-header, .site-footer {
   color: #b7e6ff;
   font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
+.site-title {
+  display: none;
+}
 a {
   color: #53c7ff;
 }
@@ -73,9 +76,8 @@ pre {
 
 # Dax — Augmentation Lab Symbiont
 
-[GitHub](https://github.com/c4554ndr4/Discord_Symbiont)
 
-This page is a project overview for the Discord Symbiont framework and its primary prompt.
+This page is a project overview for the Discord Symbiont framework and its primary prompt. [GitHub](https://github.com/c4554ndr4/Discord_Symbiont)
 
 Dax is the Augmentation Lab symbiont: a strategic presence designed to make the lab stronger by improving social momentum, project completion, and member satisfaction. This repo is the public home for the bot, its operating principles, and how to run a local instance.
 
