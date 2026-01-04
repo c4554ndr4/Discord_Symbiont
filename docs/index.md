@@ -27,11 +27,20 @@ pre, code {
 .highlighter-rouge,
 .highlighter-rouge .highlight,
 .highlighter-rouge pre,
-.highlight pre {
-  background: #0b1420;
-  color: #b7e6ff;
-  border: 1px solid #0f2a3b;
+.highlight pre,
+.highlight code,
+.highlighter-rouge code,
+.highlighter-rouge pre {
+  background: #0b1420 !important;
+  color: #b7e6ff !important;
+  border: 1px solid #0f2a3b !important;
   border-radius: 6px;
+}
+.highlight table,
+.highlight td,
+.highlight tr {
+  background: #0b1420 !important;
+  color: #b7e6ff !important;
 }
 pre {
   padding: 12px 14px;
