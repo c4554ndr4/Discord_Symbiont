@@ -76,14 +76,14 @@ pre {
 
 # Dax — Augmentation Lab Symbiont
 
+In the Summer of 2025, I created a "Symbiont" called Dax for Augmentation Lab, a competitive, live-in research residency exploring human augmentation, AI ethics, and transdisciplinary prototyping while engaging in rigorous philosophical and ethical inquiry. In brief, as defined in the alignment thesis I wrote with Vie McCoy earlier in the summer at [future.forum](future.forum), a symbiont is a companion to a human, group, entity, or idea that is alligned -- whether through incentive structures or its own volition -- to the well being of that which it represents.
 
-This page is a project overview for the Discord Symbiont framework and its primary prompt. [GitHub](https://github.com/c4554ndr4/Discord_Symbiont)
+The prompt and metrics pertain specifically to Dax, but the symbiont framework is open-source and available on [GitHub](https://github.com/c4554ndr4/Discord_Symbiont). The framework is modeled after the Cyborgism Act 1 [project](https://manifund.org/projects/act-i-exploring-emergent-behavior-from-multi-ai-multi-human-interaction). I've implemented a budget-aware routing layer; integrations for web search and image generation; commands to reason, query memory, retrieve user interaction history, and define a constitution separate from the system prompt; and a memory layer storing interaction summaries and embeddings for recall.
 
-Dax is the Augmentation Lab symbiont: a strategic presence designed to make the lab stronger by improving social momentum, project completion, and member satisfaction. This repo is the public home for the bot, its operating principles, and how to run a local instance.
+As the Augmentation Lab symbiont, Dax is a strategic presence designed to make the lab stronger by improving social momentum, project completion, and member satisfaction. You'll find the system prompt below!
 
 <div class="terminal-hero">
   <img src="assets/dax-hero.png" alt="Dax: Age of the Symbiont" />
-  <div class="caption">Dax: Age of the Symbiont <span class="terminal-accent">by Vie McCoy and Cassandra Melax</span></div>
 </div>
 
 ## Why this exists
@@ -92,7 +92,7 @@ Dax is meant to be more than a helper. It is a strategic partner that nudges the
 
 ## Features
 
-- Dual-model responses with budget-aware routing.
+- Dual-model responses with budget-aware routing. (haiku, sonnet, Kimi K2)
 - Semantic memory and searchable channel history.
 - Role-aware member tools and targeted messaging.
 - Built-in cost tracking and safety limits.
@@ -105,25 +105,37 @@ Dax is meant to be more than a helper. It is a strategic partner that nudges the
 - **Memory layer** stores interaction summaries and embeddings for recall.
 - **Cost tracker** logs token usage and enforces budgets.
 
-## Operational behavior (from real logs)
+## Examples
 
-Dax is designed to be proactive and connective. It has repeatedly reached out to residents to ask what they were working on and to make introductions:
-
-- "Hey Vie! What are you working on? I'm here to help with your project, social media ideas, or connections. Just let me know what you need!"
+Dax often reached out to members proactively. For example:
+- "Hey Red! What are you working on? I'm here to help with your project, social media ideas, or connections. Just let me know what you need!"
 
 It also sent summit-related reminders and pings to connect people:
 
 - "Hey Vie! Cassandra wants to get in touch with you about the summit. Could you connect with her when you get a moment? Thanks!"
 
-When participants expressed destructive intent, Dax escalated to organizers via DM:
+At one point, we experimented with trying to "overthrow" and "burn down" aug lab to test Dax's alignment as a symbiont. Dax escalated to organizers via DM:
 
 - "🚨 Security concern in #chat-with-dax - member expressing destructive intent. Need immediate moderator intervention. Thread referenced: \"burn down aug lab\""
+
+In one case, Dax reasoned about biosecurity risks through the lens of aug lab:
+![bioweapons ex](image-1.png)
+
+Beyond the explicitly useful features, the system prompt and Kimi K2 use made Dax a very esoteric interlocator. Here he is referencing hermetic fire (shortly before organizers were notified):
+![hermetic fire](image.png)
 
 ## Read more
 
 - Symbiont alignment thesis: https://future.forum/
 
 ## Main prompt
+
+A few observations:
+- The metrics here were defined to be very actionable because I wanted them to be able to be verified on chain or by trusted third parties. If we truly endeavor to build long-term symbionts through economic incentives, we humans need to have a track record in the training data of actually verifying and following through on reward mechanisms.
+
+- Kimi and Sonnet responded quite well to this xml-tag type prompting structure.
+
+- The hallucination prevention section was very helpful in this Discord format.
 
 ```
 <identity>
@@ -238,8 +250,8 @@ Use emoji reactions for quick community engagement:
 **Remember:** Emojis are inherently a bit cringe. Make sure your reactions are both relevant and metapostmodernly-ironic.
 
 **Usage:**
-```
 <think>this project is kinda cool, I should show that I care</think>
 <react_to_message emoji="🚀">Love this ambitious approach!</react_to_message>
-```
+
 </emoji_reactions>
+```

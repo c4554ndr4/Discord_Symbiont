@@ -1,8 +1,8 @@
-# Discord Symbiont Framework (Dax)
+# Discord Symbiont Framework
 
-This repo is a framework for creating a Discord symbiont: a strategic agent that lives in a Discord server, interprets context, and takes goal-directed actions. We include a sample prompt because we built a symbiont for Augmentation Lab in summer 2025 (auglab.org), and the same structure can be adapted for other communities.
+This repo is a framework for creating a Discord symbiont: a strategic agent that lives in a Discord server, interprets context, and takes goal-directed actions.
 
-For the public-facing description (with links, images, and the main prompt), see `docs/index.md` and enable GitHub Pages from the `docs/` folder.
+The prompt and metrics pertain specifically to Dax (see the intro [here](https://c4554ndr4.github.io/Discord_Symbiont/)), but the symbiont framework is open-source and available on [GitHub](https://github.com/c4554ndr4/Discord_Symbiont). The framework is modeled after the Cyborgism Act 1 [project](https://manifund.org/projects/act-i-exploring-emergent-behavior-from-multi-ai-multi-human-interaction). I've implemented a budget-aware routing layer; integrations for web search and image generation; commands to reason, query memory, retrieve user interaction history, and define a constitution separate from the system prompt; and a memory layer storing interaction summaries and embeddings for recall.
 
 ## What is a Discord agent?
 
@@ -48,7 +48,7 @@ This keeps routine interactions fast and cheap while reserving expensive model c
 
 ## Configuration guide
 
-The bot uses `config.yaml` for runtime behavior. A safe template lives in `config.example.yaml`.
+The bot uses `config.yaml` for runtime behavior. A safe template lives in `config.example.yaml`. This is a really convenient paradigm for vibe-coding that I highly recommend!
 
 - `api_keys`: Environment variable mapping for providers (Discord, Anthropic, OpenAI, OpenRouter, Groq).
 - `bot_name`: Display name used in logs and interfaces.
@@ -106,8 +106,3 @@ You can also use:
 ```bash
 ./start_bot.sh
 ```
-
-## Notes for public release
-
-- Do not commit `.env`, `config.yaml`, or any `*.db` files.
-- The local database stores conversation history and memory embeddings.
