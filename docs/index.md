@@ -14,7 +14,8 @@ body, .page-content, .wrapper, .site-header, .site-footer {
 .site-header,
 .site-nav,
 .site-title,
-.site-title a {
+.site-title a,
+.markdown-body > h1:first-of-type {
   display: none;
 }
 a {
