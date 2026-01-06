@@ -11,7 +11,10 @@ body, .page-content, .wrapper, .site-header, .site-footer {
   color: #b7e6ff;
   font-family: "IBM Plex Mono", "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", monospace;
 }
-.site-title {
+.site-header,
+.site-nav,
+.site-title,
+.site-title a {
   display: none;
 }
 a {
