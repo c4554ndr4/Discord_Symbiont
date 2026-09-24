@@ -4,6 +4,12 @@ This repo is a framework for creating a Discord symbiont: a strategic agent that
 
 The prompt and metrics pertain specifically to Dax (see the intro [here](https://c4554ndr4.github.io/Discord_Symbiont/)), but the symbiont framework is open-source and available on [GitHub](https://github.com/c4554ndr4/Discord_Symbiont). The framework is modeled after the Cyborgism Act 1 [project](https://manifund.org/projects/act-i-exploring-emergent-behavior-from-multi-ai-multi-human-interaction). I've implemented a budget-aware routing layer; integrations for web search and image generation; commands to reason, query memory, retrieve user interaction history, and define a constitution separate from the system prompt; and a memory layer storing interaction summaries and embeddings for recall.
 
+## Agent architecture
+
+The diagram maps Dax's constitution, reactive and autonomous execution paths, persistent memory, and tool capabilities. Modular extensions are labeled separately.
+
+[![Dax architecture: constitutional guidance, message processing, autonomous investigations, persistent memory, and capability inventory](docs/assets/discord-symbiont-architecture.png)](docs/assets/discord-symbiont-architecture.png)
+
 ## What is a Discord agent?
 
 A Discord agent is a bot that can read messages, reason about context, and take actions inside a server. Dax is an agent that combines:
